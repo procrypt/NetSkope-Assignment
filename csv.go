@@ -30,15 +30,15 @@ type Data struct {
 func main() {
 	for {
 		csvData()
-		time.Sleep(1*time.Second)
+		time.Sleep(60*time.Second)
 	}
 }
 
 func csvData() {
 
 	a := time.Now().Format("15:04")
-	var d Data
 
+	var d Data
 
 	info, _ := ioutil.ReadDir("/var/run/")
 
